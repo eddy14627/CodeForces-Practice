@@ -26,7 +26,18 @@ void solve()
         bx = max(bx, it);
         bn = min(bn, it);
     }
-    if (ax >= bx && an <= bn)
+    if (n == 1)
+    {
+        if (k % 2)
+        {
+            cout << max(ax, bx) << endl;
+        }
+        else
+        {
+            cout << min(ax, bn) << endl;
+        }
+    }
+    else if (ax >= bx && an <= bn)
     {
         if (k % 2)
         {
